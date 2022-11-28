@@ -5,4 +5,4 @@ simple script to get windows back to a normal state after a full reinstall
 in powershell:
 
     > Set-ExecutionPolicy RemoteSigned -Scope CurrentUser 
-    > install.ps1
+    > .\install.ps1

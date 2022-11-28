@@ -8,14 +8,14 @@
 #functions
 function Install-Scoop
 {
-	Write-Host "Attemtping to install scoop..."
+	Write-Host "Attemtping to install scoop..." -ForegroundColor DarkCyan
 	Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
 	irm get.scoop.sh | iex
 }
 
 function Sync-ScoopBuckets
 {
-	Write-Host "Attemtping to add scoop buckets: extras, versions, and games..."
+	Write-Host "Attemtping to add scoop buckets: extras, versions, and games..." -ForegroundColor DarkCyan
 	scoop bucket add extras
 	scoop bucket add versions
 	scoop bucket add games
@@ -24,14 +24,14 @@ function Sync-ScoopBuckets
 
 function Install-ScoopPackages
 {
-	Write-Host "Attemtping to install packages..."
+	Write-Host "Attemtping to install packages..." -ForegroundColor DarkCyan
 	scoop install sudo paint.net paint.net-plugin-pyrochild python vscode audacity obs-studio git curl wget cat libreoffice qbittorrent spotify spicetify-cli vlc-nightly discord-canary steam steamcmd vcredist2015 vcredist2017 directx powertoys epic-games-launcher openshot
 
 }
 
 function Update-ScoopPackages
 {
-	Write-Host "Attemtping to update & upgrade packages..."
+	Write-Host "Attemtping to update & upgrade packages..." -ForegroundColor DarkCyan
 	scoop update
 
 }
